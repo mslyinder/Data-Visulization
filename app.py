@@ -19,6 +19,7 @@ with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-c
 
 external_stylesheets = ['assets/style.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 colors = {
     'background': '#94b3d1',
     'text': '#111111'
